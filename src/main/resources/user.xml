@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="user" class="com.yztc.di.User" abstract="true" >
+        <!--setter()方法注入-->
+        <!--abstract = true 表示优先加载-->
+        <property name="name">
+            <value>wangcai</value>
+        </property>
+        <property name="age">
+            <value>18</value>
+        </property>
+        <property name="password">
+            <value>123456</value>
+        </property>
+        <property name="sex">
+            <value>不辨雌雄</value>
+        </property>
+        
+    </bean>
+
+
+</beans>
